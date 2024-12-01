@@ -310,178 +310,38 @@ $(function () {
     })
 })
 
-$(function () {
-    const defaultOptions = {
-        background: {
-            color: "transparent",
-        },
-        FullScreen: { enable: false, zIndex: 99 },
-        interactivity: {
-            events: {
-                onClick: {
-                    enable: false,
-                    mode: "push",
-                },
-                onHover: {
-                    enable: true,
-                    mode: "repulse",
-                    parallax : {
-                        enable: true,
-                        smooth: 200
-                    },
-                }
-            },
-            modes: {
-                push: {
-                    quantity: 900,
-                },
-                repulse: {
-                    distance: 70,
-                },
-            },
-        },
-        particles: {
-            color: {
-                value: "#64b06e",
-                animation: {
-                    enable: true,
-                    speed: 2,  // Adjust the speed of the color transition here
-                    sync: false
-                }
-            },
-            links: {
-                enable: true,
-                opacity: 0.9,
-                distance: 180, // Default distance
-                color: "#64b06e",
-            },
-            move: {
-                enable: true,
-                speed: { min: 3, max: 2 },
-            },
-            opacity: {
-                value: { min: 0.6, max: 0.7 },
-            },
-            size: {
-                value: { min: 1, max: 1 }
-            },
-        },
-    };
-
-    const darkOptions = {
-        particles: {
-            color: {
-                value: "#11c4c2",
-                animation: {
-                    enable: true,
-                    speed: 2,  // Keep the same transition speed for consistency
-                    sync: false
-                }
-            },
-            links: {
-                color: "#11c4c2",
-            }
-        }
-    };
-
-    function updateLinksDistance() {
-        // Determine the appropriate links.distance based on screen width
-        if (window.matchMedia("(max-width: 1240px) and (min-width: 1000px)").matches) {
-            defaultOptions.particles.links.distance = 120;
-        } else if (window.matchMedia("(max-width: 999px) and (min-width: 768px)").matches) {
-            defaultOptions.particles.links.distance = 60;
-        } else if (window.matchMedia("(max-width: 767px)").matches) {
-            defaultOptions.particles.links.distance = 40;
-        } else {
-            // Default distance for larger screens
-            defaultOptions.particles.links.distance = 180;
-        }
-    }
-
-    function loadParticles() {
-        const isDarkMode = $("body").hasClass("dark");
-
-        // Update links distance based on the current screen size
-        updateLinksDistance();
-
-        const options = isDarkMode
-            ? $.extend(true, {}, defaultOptions, darkOptions) // Merge dark mode options
-            : defaultOptions;
-
-        tsParticles.load("tsparticles", options);
-    }
-
-    // Initial load
-    loadParticles();
-
-    // Optional: Recalculate and reload particles on window resize
-    $(window).resize(function () {
-        loadParticles();
-    });
-
-    // Watch for class change in case of dynamic mode switching
-    const observer = new MutationObserver(function (mutations) {
-        mutations.forEach(function (mutation) {
-            if (mutation.attributeName === "class") {
-                loadParticles();
-            }
-        });
-    });
-
-    observer.observe(document.body, { attributes: true });
-});
+// $(function () {
+//     $('.blogSlider').owlCarousel({
+//         loop: true,
+//         margin: 10,
+//         nav: false,
+//         dots: false,
+//         autoplay: true,
+//         // slideTransition: 'linear',
+//         autoplayTimeout: 3000,
+//         // autoplaySpeed: 4000,
+//         smartSpeed: 550,
+//         autoplayHoverPause: true,
+//         // animateIn: 'animate__fadeIn',
+//         // animateOut: 'animate__fadeOut',
+//         smartSpeed: 500,
+//         responsive: {
+//             0: {
+//                 items: 1
+//             },
+//             600: {
+//                 items: 2
+//             },
+//             1000: {
+//                 items: 4
+//             }
+//         }
+//     })
+// })
 
 
 
-$(function () {
-    const options = {
-        background: {
-            color: "transparent",
-        },
-        FullScreen: { enable: false, zIndex: 99 },
-        interactivity: {
-            events: {
-                onClick: {
-                    enable: false,
-                    mode: "push",
-                },
-                onHover: {
-                    enable: false,
-                    mode: "repulse",
-                }
-            },
-            modes: {
-                push: {
-                    quantity: 2,
-                },
-                repulse: {
-                    distance: 50,
-                },
-            },
-        },
-        particles: {
-            color: "#64b06e",
-            links: {
-                enable: true,
-                opacity: 0.4,
-                distance: 80,
-                color: "#64b06e",
-            },
-            move: {
-                enable: true,
-                speed: { min: 1, max: 1 },
-            },
-            opacity: {
-                value: { min: 0.1, max: 0.1 },
-            },
-            size: {
-                value: { min: 1, max: 1 }
-            },
-        },
-    }
 
-    tsParticles.load("tsparticlestwo", options);
-})
 
 
 
@@ -1090,15 +950,15 @@ $(function () {
 
 
 // Dark Mode
-$(function(){
-    document.querySelector('.inputdark').addEventListener('change', function() {
-        if (this.checked) {
-            document.body.classList.add('dark');
-        } else {
-            document.body.classList.remove('dark');
-        }
-    });
-})
+// $(function(){
+//     document.querySelector('.inputdark').addEventListener('change', function() {
+//         if (this.checked) {
+//             document.body.classList.add('dark');
+//         } else {
+//             document.body.classList.remove('dark');
+//         }
+//     });
+// })
 
 
 // $(document).ready(function(){
@@ -1155,16 +1015,18 @@ $( document ).ready(function() {
 
 
 // Progress bar
-$(window).on('scroll',function(){
-    let scroll = $(window).scrollTop();
-    let oTop = $('.progress-bar').offset().top - window.innerHeight;
-    if(scroll>oTop){
-        $(".progress-bar").addClass("progressbar-active");
-    }
-    else{
-        $(".progress-bar").removeClass("progressbar-active");
-    }
-});
+$(function(){
+    $(window).on('scroll',function(){
+        let scroll = $(window).scrollTop();
+        let oTop = $('.progress-bar').offset().top - window.innerHeight;
+        if(scroll>oTop){
+            $(".progress-bar").addClass("progressbar-active");
+        }
+        else{
+            $(".progress-bar").removeClass("progressbar-active");
+        }
+    });
+})
 
 
 // counter
