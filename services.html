@@ -49,10 +49,10 @@
                     <div class="mainHeaderSection">
                         <div class="headerNav">
                             <ul class="headerMenu">
-                                <li> <a href="index.html" class="active">Home</a></li>
+                                <li> <a href="index.html" >Home</a></li>
                                 <li> <a href="about-us.html">About Us</a></li>
                                 <li class="hasSub">
-                                    <a href="services.html">Services</a>
+                                    <a href="services.html" class="active">Services</a>
                                     <div class="headerSubNav">
                                         <ul class="headerSubMenu">
                                             <li><a href="services.html#search-engine-optimization">Search Engine Optimization</a></li>
@@ -101,7 +101,7 @@
                             </li> -->
                             <li><a href="javascript:void(0)" class="headerCallMenu"><i class="fa-solid fa-phone-volume"></i></a></li>
                             <li>
-                                <a class="buttonHeader">Enquiry </a>
+                                <a class="buttonHeader" data-bs-toggle="modal" data-bs-target="#quickEnquiry" >Enquiry </a>
                             </li>
                         </ul>
                     </div>
@@ -118,7 +118,7 @@
     </section>
 
 
-    <section class="inrbnr" style="background: linear-gradient(83deg, #fff4ee, #fff8f4), url(assets/img/bg/inner-bg1.jpg); background-position: center;">
+    <section class="inrbnr" style="background: linear-gradient(83deg, #fff4eeba, #fff4eeba), url(assets/img/bgs/inner-bg1.jpg); background-position: top 350px center; background-size: 100%;">
        
         <div class="site-width">
             <div class="inrbnrContent">
@@ -134,23 +134,195 @@
     </section>
     
   
-    <section class="inner pt-50 pb-50 position-relative overflow-hidden">
-        <canvas class="canvastwo" id="canvas1" width="1536" height="825"></canvas>
-        <div class="projectWrapper">
-            <div class="site-width">
-                <div class="titleSection wow animate__fadeInUp" data-wow-delay="0.3s">
+  
+    <section class="services inner pt-50 pb-50">
+        <div class="site-width">
+            <div class="serviceWrapper">
+                <div class="titleSection  wow animate__fadeInUp" data-wow-delay="0.3s">
                     <div class="text-center">
                         <h2>
-                            Coming Soon
+                            Our Services
                         </h2>
-                        <!-- <h3>Projects</h3>
+                        <h3>Services</h3>
                         <h4>
-                            Our Recent Latest Projects
-                        </h4> -->
+                            We Provide Exclusive Service for Your Business
+                        </h4>
                     </div>
                 </div>
+                <div class="row wow animate__fadeInRight">
+                    <div class="col-md-3">
+                        <div class="serviceCard">
+                            <div class="serviceIco">
+                                <img src="assets/img/icons/seo.png" alt="icon">
+                            </div>
+                            <div class="serviceText">
+                                <h4>Search Engine Optimization</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit tempore explicabo provident.</p>
+                                <a class="buttonHeader serviceBtn" href="services.html">Enquiry <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="serviceCard">
+                            <div class="serviceIco">
+                                <img src="assets/img/icons/conversion-marketing.png" alt="icon">
+                            </div>
+                            <div class="serviceText">
+                                <h4>Conversion Marketing</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit tempore explicabo provident.</p>
+                                <a class="buttonHeader serviceBtn" href="services.html">Enquiry <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <div class="serviceCard">
+                            <div class="serviceIco">
+                                <img src="assets/img/icons/Facebook-Promotion.png" alt="icon">
+                            </div>
+                            <div class="serviceText">
+                                <h4>Facebook Promotion</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit tempore explicabo provident.</p>
+                                <a class="buttonHeader serviceBtn" href="services.html">Enquiry <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="serviceCard">
+                            <div class="serviceIco">
+                                <img src="assets/img/icons/Brand-Marketing.png" alt="icon">
+                            </div>
+                            <div class="serviceText">
+                                <h4>Brand Marketing</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit tempore explicabo provident.</p>
+                                <a class="buttonHeader serviceBtn" href="services.html">Enquiry <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="col-md-3">
+                        <div class="serviceCard">
+                            <div class="serviceIco">
+                                <img src="assets/img/icons/Follower-Increase.png" alt="icon">
+                            </div>
+                            <div class="serviceText">
+                                <h4>Social Profile Follower Increase</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit tempore explicabo provident.</p>
+                                <a class="buttonHeader serviceBtn" href="services.html">Enquiry <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 
+                    <div class="col-md-3">
+                        <div class="serviceCard">
+                            <div class="serviceIco">
+                                <img src="assets/img/icons/Reputation-Management.png" alt="icon">
+                            </div>
+                            <div class="serviceText">
+                                <h4>Reputation Management</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit tempore explicabo provident.</p>
+                                <a class="buttonHeader serviceBtn" href="services.html">Enquiry <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="col-md-3">
+                        <div class="serviceCard">
+                            <div class="serviceIco">
+                                <img src="assets/img/icons/Protection-Monitoring.png" alt="icon">
+                            </div>
+                            <div class="serviceText">
+                                <h4>Brand Name Protection & Monitoring</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit tempore explicabo provident.</p>
+                                <a class="buttonHeader serviceBtn" href="services.html">Enquiry <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <div class="serviceCard">
+                            <div class="serviceIco">
+                                <img src="assets/img/icons/link-building.png" alt="icon">
+                            </div>
+                            <div class="serviceText">
+                                <h4>Link Building</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit tempore explicabo provident.</p>
+                                <a class="buttonHeader serviceBtn" href="services.html">Enquiry <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <div class="col-md-3">
+                        <div class="serviceCard">
+                            <div class="serviceIco">
+                                <img src="assets/img/icons/Article0Marketing.png" alt="icon">
+                            </div>
+                            <div class="serviceText">
+                                <h4>Article Marketing</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit tempore explicabo provident.</p>
+                                <a class="buttonHeader serviceBtn" href="services.html">Enquiry <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-3">
+                        <div class="serviceCard">
+                            <div class="serviceIco">
+                                <img src="assets/img/icons/Blog-Promotion.png" alt="icon">
+                            </div>
+                            <div class="serviceText">
+                                <h4>Blog Promotion & Marketing</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit tempore explicabo provident.</p>
+                                <a class="buttonHeader serviceBtn" href="services.html">Enquiry <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                   
+                    <div class="col-md-3">
+                        <div class="serviceCard">
+                            <div class="serviceIco">
+                                <img src="assets/img/icons/Customer-Engagement.png" alt="icon">
+                            </div>
+                            <div class="serviceText">
+                                <h4>Customer Engagement & Monitoring</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit tempore explicabo provident.</p>
+                                <a class="buttonHeader serviceBtn" href="services.html">Enquiry <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <div class="col-md-3">
+                        <div class="serviceCard">
+                            <div class="serviceIco">
+                                <img src="assets/img/icons/press-release.png" alt="icon">
+                            </div>
+                            <div class="serviceText">
+                                <h4>Press Release Distribution</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit tempore explicabo provident.</p>
+                                <a class="buttonHeader serviceBtn" href="services.html">Enquiry <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <div class="serviceCard">
+                            <div class="serviceIco">
+                                <img src="assets/img/icons/Directory-Submission.png" alt="icon">
+                            </div>
+                            <div class="serviceText">
+                                <h4>Consumer Directory Submission</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit tempore explicabo provident.</p>
+                                <a class="buttonHeader serviceBtn" href="services.html">Enquiry <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                   
+    
+                </div>
             </div>
+
         </div>
     </section>
 
@@ -181,7 +353,7 @@
                             <p class="ttle mb-2"><a href="javascript:void(0)" class="title-16">Quick Links</a></p>
                             <a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a>
                             <a href="about-us.html"><i class="fa-solid fa-chevron-right"></i> About Us</a>
-                            <a href="clients.html"><i class="fa-solid fa-chevron-right"></i> Clients</a>
+                            <!-- <a href="clients.html"><i class="fa-solid fa-chevron-right"></i> Clients</a> -->
                             <a href="contact-us.html"><i class="fa-solid fa-chevron-right"></i> Contact Us</a>
                             <a href="contact-us.html"><i class="fa-solid fa-chevron-right"></i> Enquiry</a>
                             <a href="javascript:void(0)"><i class="fa-solid fa-chevron-right"></i> Blogs</a>
@@ -382,7 +554,6 @@
 <script src="assets/js/jquery.magnific-popup.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
 <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
-<script src="assets/js/TweenMax.min.js"></script> <!-- Parrulux scroll with image -->
 <script src="assets/js/owl.carousel.min.js"></script>
 <script src="assets/js/jquery.waypoints.min.js"></script>
 <script src="assets/js/inview.min.js"></script>
@@ -421,8 +592,8 @@ $(window).on("load", function () {
 });
 
 </script>
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script src="assets/js/dot-particle.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
+<!-- <script src="assets/js/dot-particle.js"></script> -->
 <script src="assets/js/sweetalert.js"></script>
 </body>
 

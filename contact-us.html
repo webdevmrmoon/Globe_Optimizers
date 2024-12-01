@@ -49,7 +49,7 @@
                     <div class="mainHeaderSection">
                         <div class="headerNav">
                             <ul class="headerMenu">
-                                <li> <a href="index.html" class="active">Home</a></li>
+                                <li> <a href="index.html" >Home</a></li>
                                 <li> <a href="about-us.html">About Us</a></li>
                                 <li class="hasSub">
                                     <a href="services.html">Services</a>
@@ -66,7 +66,7 @@
                                     </div>
                                 </li>
                                 <li><a href="all-projects.html">Our Portfolio</a></li>
-                                <li><a href="contact-us.html">Contact Us</a></li>
+                                <li><a href="contact-us.html" class="active">Contact Us</a></li>
                                 <li>
                                     <div class="socialSticky mobile">
                                         <p class="text-center" style="color: #fff;margin-top: 20px;">Follow Us</p>
@@ -101,7 +101,7 @@
                             </li> -->
                             <li><a href="javascript:void(0)" class="headerCallMenu"><i class="fa-solid fa-phone-volume"></i></a></li>
                             <li>
-                                <a class="buttonHeader">Enquiry </a>
+                                <a class="buttonHeader" data-bs-toggle="modal" data-bs-target="#quickEnquiry" >Enquiry </a>
                             </li>
                         </ul>
                     </div>
@@ -117,8 +117,7 @@
        
     </section>
 
-
-    <section class="inrbnr" style="background: linear-gradient(83deg, #fff4ee, #fff8f4), url(assets/img/bg/inner-bg1.jpg); background-position: center;">
+    <section class="inrbnr" style="background: linear-gradient(83deg, #fff4eeba, #fff4eeba), url(assets/img/bgs/inner-bg1.jpg); background-position: top 350px center; background-size: 100%;">
        
         <div class="site-width">
             <div class="inrbnrContent">
@@ -132,24 +131,157 @@
             </div>
         </div>
     </section>
-    
   
     <section class="inner pt-50 pb-50 position-relative overflow-hidden">
         <canvas class="canvastwo" id="canvas1" width="1536" height="825"></canvas>
-        <div class="projectWrapper">
-            <div class="site-width">
-                <div class="titleSection wow animate__fadeInUp" data-wow-delay="0.3s">
-                    <div class="text-center">
-                        <h2>
-                            Coming Soon
-                        </h2>
-                        <!-- <h3>Projects</h3>
-                        <h4>
-                            Our Recent Latest Projects
-                        </h4> -->
+       
+        <div class="site-width">
+            <div class="contactWrapper">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="choose-location-tab-card  mb-4">
+                            <div class="contactIcon">
+                                <img src="assets/img/icons/calling.png" alt="ico">
+                            </div>
+                            <h5>
+                                Call Us at
+                            </h5>
+                            <p><i class="fa-solid fa-phone"></i> +91 888 888 8888</p>
+                            <p><i class="fa-solid fa-phone"></i> +91 888 888 8888</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="choose-location-tab-card  mb-4">
+                            <div class="contactIcon">
+                                <img src="assets/img/icons/email.png" alt="ico">
+                            </div>
+                            <h5>
+                                Email Us at
+                            </h5>
+                            <p><i class="fa-solid fa-envelope"></i> <a href="mailto:info@globeoptimizers.com">info@globeoptimizers.com</a></p>
+                            <p><i class="fa-solid fa-envelope"></i> <a href="mailto:support@globeoptimizers.com">support@globeoptimizers.com</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="choose-location-tab-card  mb-4">
+                            <div class="contactIcon">
+                                <img src="assets/img/icons/location.png" alt="ico">
+                            </div>
+                            <h5>
+                                Corporate Office
+                            </h5>
+                            <p class="address"><i class="fa-solid fa-location-dot"></i> 
+                                Electronic City, Sector 62, Noida, <br>Uttar Pradesh, 201301
+                            </p>
+                        </div>
+                    </div>
+                 
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="mapform">
+        <div class="site-width">
+            <div class="mapformWrapper">
+                <div class="mapSection">
+                   <div class="mapWrap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28016.21261349608!2d77.35646854689007!3d28.628965561708046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce557c7171f3b%3A0xa88eef08efc33b92!2sElectronic%20City%2C%20H%20Block%2C%20Sector%2062%2C%20Noida%2C%20Uttar%20Pradesh%20201301!5e0!3m2!1sen!2sin!4v1732948355650!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                   </div>
+                </div>
+                <div class="contactusFromCard">
+                    <div class="enquireNowForm contactPage">
+                        <form class="">
+                            <div class="right-sidebar-box">
+                                <div class="titleSection left wow animate__fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                                    <div class="text-center">
+                                        <h2>
+                                            Drop us a line
+                                        </h2>
+                                        <h3>Contact Us</h3>
+                                     
+                                        <p>
+                                            Feel free to send your comments, suggestions, or questions using the provided form below.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                  
+                                    <div class="col-md-12">
+                                        <div class="ml-md-3 mb-3 custom-form">
+                                            <label class="form-label" for="FName">Name <span style="color: red;">*</span></label>
+                                            <div class="custom-input">
+                                                <input type="text" id="FName" placeholder="" class="form-control form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-md-6">
+                                        <div class="ml-md-3 mb-3 custom-form">
+                                            <label class="form-label" for="email">Email <span style="color: red;">*</span></label>
+                                            <div class="custom-input">
+                                                <input type="text" id="email" placeholder="" class="form-control form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="ml-md-3 mb-3 custom-form">
+                                            <label class="form-label" for="number">Mobile Number <span style="color: red;">*</span></label>
+                                            <div class="custom-input">
+                                                <input type="text" id="number" placeholder="" maxlength="10" oninput="this.value = this.value.replace(/[^0-9]/g, '');" class="form-control form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="ml-md-3 mb-3 custom-form">
+                                            <label class="form-label" for="genderSelect">Subject <span style="color: red;">*</span></label>
+                                            <div class="custom-input">
+                                                <input type="text" id="number" placeholder="" maxlength="10" oninput="this.value = this.value.replace(/[^0-9]/g, '');" class="form-control form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                              
+                         
+                                    <div class="col-12">
+                                        <div class="ml-md-3 mb-3 custom-form">
+                                            <label class="form-label" for="Message">Your Message <span style="color: red;">*</span></label>
+                                            <div class="custom-input">
+                                                <textarea type="text" id="description" placeholder="" class="form-control form-control"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="ml-md-3 mb-3 custom-form">
+                                        <label class="form-label" for="captcha">Please Enter Captcha <span style="color: red;">*</span></label>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div data-v-3dfe0fd7="" class="custom-input">
+                                                    <input type="text" id="captcha1" placeholder="" class="form-control form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="captcha ">
+                                                    <input type="button" id="captcha" name="captcha" placeholder="Captcha" style="pointer-events: none;" class="form-control captcha-value" value="h6APHp">
+                                                    <a href="javascript:void(0)" class="refreshcaptcha" onclick="createCaptcha()" style="bottom:40px;">
+                                                        <i class="fa-solid fa-rotate-right"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span id="errorMsg" style="color:red;"></span>
+                                <div class="submitandclear">
+                                    <label id="lblMsg" style="color:green;"></label>
+                                    <button class="buttonHeader">Submit <i class="fa-solid fa-arrow-right"></i></button>
+                                    </div>  
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                
             </div>
         </div>
     </section>
@@ -181,7 +313,7 @@
                             <p class="ttle mb-2"><a href="javascript:void(0)" class="title-16">Quick Links</a></p>
                             <a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a>
                             <a href="about-us.html"><i class="fa-solid fa-chevron-right"></i> About Us</a>
-                            <a href="clients.html"><i class="fa-solid fa-chevron-right"></i> Clients</a>
+                            <!-- <a href="clients.html"><i class="fa-solid fa-chevron-right"></i> Clients</a> -->
                             <a href="contact-us.html"><i class="fa-solid fa-chevron-right"></i> Contact Us</a>
                             <a href="contact-us.html"><i class="fa-solid fa-chevron-right"></i> Enquiry</a>
                             <a href="javascript:void(0)"><i class="fa-solid fa-chevron-right"></i> Blogs</a>
@@ -382,7 +514,6 @@
 <script src="assets/js/jquery.magnific-popup.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
 <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
-<script src="assets/js/TweenMax.min.js"></script> <!-- Parrulux scroll with image -->
 <script src="assets/js/owl.carousel.min.js"></script>
 <script src="assets/js/jquery.waypoints.min.js"></script>
 <script src="assets/js/inview.min.js"></script>
