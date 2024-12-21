@@ -360,6 +360,7 @@ p {
     padding: 10px 30px;
     border-radius: 15px;
     color: #fff;
+    z-index: 2;
 }
 
 .icon {
@@ -792,9 +793,9 @@ p {
     font-weight: 500;
 }
 .bannerContent h2 {
-    font-size: 60px;
+    font-size: 52px;
     font-weight: 600;
-    line-height: 68px;
+    line-height: 60px;
     margin-bottom: 18px;
 }
 .bannerContent h2 span {
@@ -2205,6 +2206,12 @@ p {
     opacity: 1;
 }
 
+.serviceWrapper {
+    margin-top: 30px;
+}
+.serviceWrapper .row {
+    gap: 27px 0px;
+}
 .serviceCard {
     padding: 30px 20px;
     border-radius: 10px;
@@ -3399,15 +3406,24 @@ p {
 }
 
 .ourClients {
-    background-image: linear-gradient(180deg, #ffede2, #ffede2), url(../img/bgs/bg2.jpg);
+    background-image: linear-gradient(180deg, #ffffff, #ffffff), url(../img/bgs/bg2.jpg);
     background-size: 100%;
     background-position: center;
 }
 
+.clientsWrapper .row {
+    gap: 22px 0px;
+}
 .clientCard {
     width: auto;
     padding: 18px;
     height: 112px;
+    box-shadow: 0px 0px 10px #ddddddc2;
+    border-radius: 10px;
+    transition: 0.4s ease-in-out;
+}
+.clientCard:hover {
+    transform: translateY(-10px);
 }
 .clientCard img {
     width: auto !important;
@@ -3574,6 +3590,90 @@ p {
     line-height: normal;
 }
 
+
+.comingSoonImg {
+    width: 40%;
+    
+}
+.faqsWrapper {
+    margin-top: 20px;
+}
+.faqsCard {
+    margin-bottom: 30px;
+}
+.faqsQs h5 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.faqsAns p {
+    padding-left: 23px;
+    text-align: justify;
+    font-weight: 400;
+    color: #414141;
+}
+
+.aiseowrapper .row {
+    gap: 10px 0px;
+}
+.aidrivenSEO {
+    background: linear-gradient(180deg, #ffede2, #ffede2), url(../img/bgs/bg3.jpg);
+    background-size: cover;
+}
+.aiseocard {
+    position: relative;
+}
+.aiseoimg {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    margin: auto;
+    padding: 14px;
+    background: #282828;
+    border-radius: 100%;
+    border: 15px solid #ffede2;
+    z-index: 1;
+    margin-bottom: -50px;
+}
+
+.aiseoimg img {
+    width: 100%;
+    filter: invert(1);
+}
+.aiseocontent {
+    padding: 25px;
+    border-radius: 15px;
+    background: linear-gradient(90deg, #ff792e, #ff792e), url(../img/texture/white-line-rays.png);
+    text-align: center;
+    position: relative;
+    padding-top: 60px;
+    background-blend-mode: hue;
+    background-size: 100%;
+}
+.aiseocontent::after {
+    position: absolute;
+    content: '';
+    height: 40px;
+    width: 20px;
+}
+.aiseocontent::before {
+    position: absolute;
+    content: '';
+    height: 40px;
+    width: 20px;
+}
+.aiseocontent h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.aiseocontent p {
+    font-weight: 500;
+    line-height: 22px;
+    color: #ffffff;
+}
 
 
 #lineCanvas {
@@ -7655,6 +7755,7 @@ body.dark .hamburger .line {
 .socialSticky.mobile {
     display: none;
 }
+
 
 
 
