@@ -64,9 +64,9 @@
                                     </div>
                                 </li>
                               
-                                <li><a href="case-studies.html">Case Studies</a></li>
+                                <li><a href="case-studies.html" class="active">Case Studies</a></li>
                                 <li class="hasSub">
-                                    <a href="javascript:void(0)" class="active">Company</a>
+                                    <a href="javascript:void(0)">Company</a>
                                     <div class="headerSubNav">
                                         <ul class="headerSubMenu">
                                             <li><a href="about-us.html">About Us</a></li>
@@ -134,10 +134,10 @@
         <div class="site-width">
             <div class="inrbnrContent">
                 <div class="inrbnrtext">
-                    <h2>Our Blogs</h2>
+                    <h2>Case Studies </h2>
                     <ul class="inrbrnNav">
                         <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-                        <li><a href="javascript:void(0)"> Blogs</a></li>
+                        <li><a href="javascript:void(0)"> Case Studies </a></li>
                     </ul>
                 </div>
             </div>
@@ -145,88 +145,126 @@
     </section>
     
   
-    <section class="blogWrapper pt-50 pb-50">
-        <div class="site-width">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="blogCard">
-                        <div class="blogImg">
-                            <img src="assets/img/services/app-development.png" alt="img">
-                            <p class="blogDate">
-                                <i class="fa-solid fa-calendar-days"></i> <span>01-12-2024</span>
-                            </p>
-                        </div>
-                        <div class="blogContent">
-                            <div class="authorDetails">
-                                <p> <i class="fa-regular fa-user"></i> By Globe Optimizers </p>
-                               
+    <!-- Latest Project -->
+ 
+    <section class="latestProject pt-50 pb-50 position-relative overflow-hidden">
+        <canvas class="canvastwo" id="canvas1" width="1536" height="825"></canvas>
+        <div class="projectWrapper">
+            <div class="site-width">
+                <!-- <div class="titleSection wow animate__fadeInUp" data-wow-delay="0.3s">
+                    <div class="text-center">
+                        <h2>
+                            Our Projects
+                        </h2>
+                        <h3>Projects</h3>
+                       
+                    </div>
+                </div> -->
+                <div class="popDestiWrapper wow animate__fadeIn" data-wow-delay="0.1s">
+                    <div class="row">
+                        <div class="col-md-4 wow animate__zoomIn" data-wow-delay="0.3s">
+                            <div class="popDestiCard">
+                                <div class="popDestiImg">
+                                    <img src="assets/img/projects/project1.jpg" alt="img">
+                                </div>
+                                <div class="popDestiContent">
+                                    <h4>99 Yard Talent</h4>
+                                    <p>
+                                        Fashion Website
+                                    </p>
+                                    <a href="javascript:void(0)"><span><i class="fa-solid fa-arrow-right"></i></span></a>
+                                </div>
                             </div>
-                            <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, nisi?</h4>
-                            <a href="blog-details.html">Read More <i class="fa-solid fa-arrow-right"></i></a>
-
+                            <div class="popDestiCard">
+                                <div class="popDestiImg">
+                                    <img src="assets/img/projects/project2.jpg" alt="img">
+                                </div>
+                                <div class="popDestiContent">
+                                    <h4>Artlist</h4>
+                                    <p>
+                                        Digital Marketing
+                                    </p>
+                                    <a href="javascript:void(0)"><span><i class="fa-solid fa-arrow-right"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 wow animate__zoomIn" data-wow-delay="0.4s">
+                            <div class="popDestiCard ">
+                                <div class="popDestiImg">
+                                    <img src="assets/img/projects/project3.jpg" alt="img">
+                                </div>
+                                <div class="popDestiContent">
+                                    <h4>Beet Box Cafe</h4>
+                                    <p>
+                                        Content Writing
+                                    </p>
+                                    <a href="javascript:void(0)"><span><i class="fa-solid fa-arrow-right"></i></span></a>
+                                </div>
+                            </div>
+                            <div class="popDestiCard">
+                                <div class="popDestiImg">
+                                    <img src="assets/img/projects/project4.jpg" alt="img">
+                                </div>
+                                <div class="popDestiContent">
+                                    <h4>Puzzle Huddle</h4>
+                                    <p>
+                                       Video Production
+                                    </p>
+                                    <a href="javascript:void(0)"><span><i class="fa-solid fa-arrow-right"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 wow animate__zoomIn" data-wow-delay="0.4s">
+                            <div class="popDestiCard">
+                                <div class="popDestiImg">
+                                    <img src="assets/img/projects/project5.jpg" alt="img">
+                                </div>
+                                <div class="popDestiContent">
+                                    <h4>Travel Agency</h4>
+                                    <p>
+                                        Search Engine Optimization
+                                    </p>
+                                    <a href="javascript:void(0)"><span><i class="fa-solid fa-arrow-right"></i></span></a>
+                                </div>
+                            </div>
+                            <div class="popDestiCard">
+                                <div class="popDestiImg">
+                                    <img src="assets/img/projects/project6.jpg" alt="img">
+                                </div>
+                                <div class="popDestiContent">
+                                    <h4>Medicare</h4>
+                                    <p>
+                                        Search Engine Optimization
+                                    </p>
+                                    <a href="javascript:void(0)"><span><i class="fa-solid fa-arrow-right"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-md-4 wow animate__zoomIn" data-wow-delay="0.5s">
+                            <div class="popDestiCard LastCard">
+                                <div class="popDestiImg">
+                                    <img src="assets/img/projects/project5.jpg" alt="img">
+                                </div>
+                                <div class="popDestiContent">
+                                    <h4>Style Fusion</h4>
+                                    <p>
+                                        Fashion Website Creation
+                                    </p>
+                                    <a href="javascript:void(0)"><span><i class="fa-solid fa-arrow-right"></i></span></a>
+                                </div>
+                            </div> -->
+                           
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="blogCard">
-                        <div class="blogImg">
-                            <img src="assets/img/services/digital-marketing.png" alt="img">
-                            <p class="blogDate">
-                                <i class="fa-solid fa-calendar-days"></i> <span>01-12-2024</span>
-                            </p>
-                        </div>
-                        <div class="blogContent">
-                            <div class="authorDetails">
-                                <p> <i class="fa-regular fa-user"></i> By Globe Optimizers </p>
-                               
-                            </div>
-                            <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, nisi?</h4>
-                            <a href="blog-details.html">Read More <i class="fa-solid fa-arrow-right"></i></a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="blogCard">
-                        <div class="blogImg">
-                            <img src="assets/img/services/graphic-design.png" alt="img">
-                            <p class="blogDate">
-                                <i class="fa-solid fa-calendar-days"></i> <span>01-12-2024</span>
-                            </p>
-                        </div>
-                        <div class="blogContent">
-                            <div class="authorDetails">
-                                <p> <i class="fa-regular fa-user"></i> By Globe Optimizers </p>
-                               
-                            </div>
-                            <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, nisi?</h4>
-                            <a href="blog-details.html">Read More <i class="fa-solid fa-arrow-right"></i></a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="blogCard">
-                        <div class="blogImg">
-                            <img src="assets/img/services/link-building.png" alt="img">
-                            <p class="blogDate">
-                                <i class="fa-solid fa-calendar-days"></i> <span>01-12-2024</span>
-                            </p>
-                        </div>
-                        <div class="blogContent">
-                            <div class="authorDetails">
-                                <p> <i class="fa-regular fa-user"></i> By Globe Optimizers </p>
-                               
-                            </div>
-                            <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, nisi?</h4>
-                            <a href="blog-details.html">Read More <i class="fa-solid fa-arrow-right"></i></a>
-
-                        </div>
-                    </div>
-                </div>
+                <!-- <div class=" mt-4 wow animate__zoomIn text-center" data-wow-delay="0.5s" style="position: relative; z-index: 3;">
+                    <a class="buttonHeader" href="case-studies.html">View All Projects <i class="fa-solid fa-arrow-right"></i></a>
+                </div> -->
             </div>
         </div>
     </section>
+
+
 
    <!-- footer -->
    <footer class="footer-wrp-main position-relative wow animate__fadeIn overflow-hidden">
